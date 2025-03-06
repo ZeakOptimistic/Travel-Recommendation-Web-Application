@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Home</title>
+    <link rel="icon" type="image/png" href="https://cdn2.steamgriddb.com/icon/b035d6563a2adac9f822940c145263ce.png">  <!-- Use PNG -->
+    <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">✈ ZeakOptimistic</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+            <button id="searchButton">Search</button>
+            <button id="clearButton">Clear</button>
+            <!-- Container for the recommendation cards -->
+            <div id="recommendationContainer" style="display: none;">
+                <div id="results"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="overlay"></div>
+
+        <!-- About Us Content -->
+        <div class="about-content">
+            <h1>ABOUT US</h1>
+            <p class="about-description">
+                Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. 
+                Our mission is to <strong>provide the best experience</strong> for people traveling to different destinations around the world.
+                
+                Feel free to explore our website to learn more about what we offer!
+            </p>
+        </div>
+
+        <!-- Team Section -->
+        <div class="team-section">
+            <h2>Our Team</h2>
+            <div class="team-members">
+                <div class="team-card">
+                    <img src="https://i2.wp.com/images.genshin-builds.com/genshin/characters/mavuika/image.png?strip=all&quality=100" alt="CEO">
+                    <h3>Mavuika</h3>
+                    <p>Incandescent Ode  of Resurrection </p>
+                    <button class="role-button">CEO</button>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://i2.wp.com/images.genshin-builds.com/genshin/characters/zhongli/image.png?strip=all&quality=75&w=256" alt="Team Lead">
+                    <h3>Zhongli</h3>
+                    <p> Farewell, Archaic Lord </p>
+                    <button class="role-button">Team Leader</button>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://i2.wp.com/images.genshin-builds.com/genshin/characters/raiden_shogun/image.png?strip=all&quality=100" alt="Delivery Head">
+                    <h3>Raiden Shogun</h3>
+                    <p> Omnipresence Over Mortals</p>
+                    <button class="role-button">Delivery Head</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="social-icons">
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/018/930/476/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook"></a>
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/042/387/654/non_2x/instagram-button-icon-set-instagram-screen-social-media-and-social-network-interface-template-stories-user-button-symbol-sign-logo-stories-liked-editorial-free-png.png" alt="Instagram"></a>
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/704/small_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png" alt="YouTube"></a>
+    </div>
+ 
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+    background: #1a2a3a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Monospace  ;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+.about-section {
+    position: relative;
+    height: 90vh;
+    background: url('https://wallpapers.com/images/featured/tokyo-dxva6ho3h8x6m3xb.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+/* Dark Overlay */
+.about-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+}
+
+/* About Content */
+.about-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin-bottom: 10px;
+}
+
+.about-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+/* Team Section */
+.team-section {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.team-section h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Team Members Container */
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual Team Cards */
+.team-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 250px;
+}
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.team-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Role Button - Modern Styling */
+.role-button {
+    padding: 8px 20px; /* Increased padding for better readability */
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #007bff, #00c6ff); /* Gradient background */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded edges */
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.role-button:hover {
+    background: linear-gradient(45deg, #0056b3, #0094ff);
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Section */
+header {
+    position: relative;
+    height: 90vh;
+    background: url('https://wallpapers.com/images/featured/tokyo-dxva6ho3h8x6m3xb.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: white;   
+    padding: 50px;
+}
+
+/* Overlay for better text visibility */
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Text Content */
+.hero-content {
+    position: relative;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+/* Contact Section */
+.contact-section {
+    position: relative;
+    height: 100vh;
+    background: url('your-background.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: space-between; /* Align text to left, form to right */
+    align-items: center;
+    text-align: left;
+    color: white;
+    padding: 50px;
+}
+
+/* Dark Overlay */
+.contact-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+/* Left Side Text (Contact Title & Description) */
+.contact-text {
+    flex: 1; /* Takes up available space on the left */
+    max-width: 500px;
+    z-index: 2;
+}
+
+.contact-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-text p {
+    font-size: 18px;
+}
+
+/* Right Side (Contact Form) */
+#contactForm {
+    flex: 1; /* Takes up available space on the right */
+    max-width: 600px;
+    padding: 20px;
+    background: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Fields */
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Placeholder Styling */
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Submit Button */
+#contactForm button {
+    width: 108%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(0, 123, 255, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Submit Button Hover */
+#contactForm button:hover {
+    background: rgba(0, 123, 255, 0.8);
+}
+
+
+/* Book Now Button */
+.book-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.book-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Social Media Icons */
+.social-icons {
+    position: absolute;
+    left: 20px; /* Adjust to align left */
+    top: 40%; /* Moves icons to the upper side */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between icons */
+}
+
+/* Style the icons */
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons img {
+    width: 50px; /* Adjust icon size */
+    height: 50px;
+    filter: none; /* Make icons fully white */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Icon Hover Effect */
+.social-icons img:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+
+/* Position the container so it doesn't cover the whole page */
+#recommendationContainer {
+    position: absolute;        /* or 'fixed' if you want it to stay in place while scrolling */
+    top: 100%;
+    right: 20px;
+    width: 400px;             /* Limit the width of the container */
+    max-height: 60vh;         /* Prevent it from expanding too far vertically */
+    overflow-y: auto;         /* Scroll if content exceeds max-height */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;                 /* Ensure it sits above the background */
+}
+
+/* Recommendation Card Styles (example) */
+.recommendation-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.recommendation-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.recommendation-card .card-content {
+    padding: 15px;
+}
+
+.recommendation-card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.recommendation-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.visit-button {
+    background-color: #007BFF;
+    color: #fff;    
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.visit-button:hover {
+    background-color: #0056b3;
+}
